@@ -1,0 +1,50 @@
+body {
+    font-family: 'Trebuchet MS', 'Arial';
+}
+
+h1{}
+h2{}
+h3{}
+#bloc_page {}
+
+
+/*_________________________________Header____________________________________*/
+
+header{}
+#bloc_id {}
+
+
+/*__________________________________Aside____________________________________*/
+
+aside{background-color: #FFCA28}
+#bloc_perso{}
+#bloc_photo{}
+#bloc_contact{}
+#bloc_bio{}
+#bloc_loisirs{}
+#ico_loisirs{}
+
+
+/*_________________________________Contenu___________________________________*/
+
+section{}
+#bloc_principal {}
+#bloc_formation {}
+#titre_formation {}
+#bloc_exp
+#titre_exp{}
+
+
+/*________________________________Footer_____________________________________*/
+
+
+footer{}
+#bloc_recom{}
+
+
+/*____________________________Responsive Design______________________________*/
+
+
+@media all and (max-width:1024px) {}
+
+@media all and (max-width:480px) {}
