@@ -5,41 +5,43 @@ body {
 h1{}
 h2{}
 h3{}
-#bloc_page {}
+.bloc {}
+.page {}
 
 
 /*_________________________________Header____________________________________*/
 
 header{}
-#bloc_id {}
+.id {}
 
 
 /*__________________________________Aside____________________________________*/
 
-aside{background-color: #FFCA28}
-#bloc_perso{}
-#bloc_photo{}
-#bloc_contact{}
-#bloc_bio{}
-#bloc_loisirs{}
-#ico_loisirs{}
+aside{background-color: #FECA07}
+.perso{}
+.photo{}
+.contact{}
+.bio{}
+.loisirs{}
+.ico_loisirs{}
 
 
 /*_________________________________Contenu___________________________________*/
 
 section{}
-#bloc_principal {}
-#bloc_formation {}
-#titre_formation {}
-#bloc_exp
-#titre_exp{}
+.principal {}
+.titre {}
+.formation {}
+.exp {}
+.date {}
+.poste {}
 
 
 /*________________________________Footer_____________________________________*/
 
 
 footer{}
-#bloc_recom{}
+.recom{}
 
 
 /*____________________________Responsive Design______________________________*/
