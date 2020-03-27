@@ -1,38 +1,38 @@
-body {font-family: 'Trebuchet MS', 'Arial';color: #4A4A4A;margin:0;}
-h1{font-size: 3.5em; font-weight: normal;height: 30px; color: black;}
-h2{font-size: 1.7em}
-h3{font-size: 1.5em;height: 20px}
+body {font-family: 'Trebuchet MS', 'Arial'; color: #4A4A4A; margin:0;}
+h1{font-size: 3.5em; font-weight: normal; height: 30px; color: black;}
+h2{font-size: 1.7em;}
+h3{font-size: 1.5em; height: 20px;}
 .page {display: grid; grid-template: 220px 1fr/1fr 4fr;}
 i {font-size: 35px;}
 
 /*Définition de la couleure primaire de la page*/
-.text-primary {color: #FECA07}
-.bg-primary {background-color: #FECA07}
-.trait {border-bottom: solid 2px #FECA07; padding-bottom: 3px}
+.text-primary {color: #FECA07;}
+.bg-primary {background-color: #FECA07;}
+.trait {border-bottom: solid 2px #FECA07; padding-bottom: 3px;}
 
 
 /*_________________________________Header____________________________________*/
 
 
 header{grid-area: 1/2/2/2; margin: 25px 0 0 50px;}
-header h3 {margin-top: 0px;}
+header h3 {margin-top: 0;}
 
 
 /*__________________________________Aside____________________________________*/
 
-aside{grid-area:1/1/3/2}
-aside h2 {background-color: #404040;text-align:center;padding:5px 0 0px 0;height: 40px}
-.perso{height: 100%;display: flex;flex-direction: column;}
-.photo{flex:0.5}
-.photo img {box-shadow:0px 0px 25px white;border-radius:50%;display:block;margin: 30px auto 30px auto}
-.contact{flex: 0.85}
-.contact li {font-weight: 600;padding: 15px 30px 15px 30px;}
+aside{grid-area:1/1/3/2;}
+aside h2 {background-color: #404040; text-align:center; padding:5px 0 0 0;height: 40px;}
+.perso{height: 100%; display: flex; flex-direction: column;}
+.photo{flex:0.5;}
+.photo img {box-shadow: 0 0 25px white; border-radius: 50%; display: block; margin: 30px auto 30px auto;}
+.contact{flex: 0.85;}
+.contact li {font-weight: 600; padding: 15px 30px 15px 30px;}
 .contact ul {list-style-type: none; margin: 0; padding: 0;}
-.bio{flex:4}
-.bio p {text-align: justify;padding: 0 30px 0 30px}
-.loisirs{flex:0.5;margin-bottom: 30px}
-.ico_loisirs{}
-.ico_loisirs i {margin: 0 10px 0 10px;padding: 10px;width: 35px;height: 35px;border: 3px solid #4A4A4A; border-radius: 50%;}
+.bio{flex:4;}
+.bio p {text-align: justify; padding: 0 30px 0 30px;}
+.loisirs{flex:0.5; margin-bottom: 30px;}
+.ico_loisirs{display: flex; justify-content: center;}
+.ico_loisirs i {margin: 0 10px 0 10px; padding: 10px; width: 35px; height: 35px; border: 3px solid #4A4A4A; border-radius: 50%;}
 
 
 /*_________________________________Contenu___________________________________*/
@@ -40,46 +40,50 @@ aside h2 {background-color: #404040;text-align:center;padding:5px 0 0px 0;height
 
 .principal {grid-area: 2/2/3/3; margin: 0 50px 0 50px;}
 section ul {margin: 0; padding: 0;}
-section li {display: flex;justify-content: flex-start}
-section li i {padding-top: 20px;margin-left: 0px}
-ul .far {font-size: 15px}
-ul .fas {font-size: 10px}
-.titre {display: flex; align-items:baseline;padding:0 0 0px 10px;margin:0 0 20px 0; height: 70px}
-.titre h2 {color: black}
-.titre i {margin-right: 30px}
-.formation, .exp, .recom {margin-bottom: 30px}
-.date {width: 30%; margin: 0 20px 0 0;font-weight: 900}
-.poste {width: 100%;align-self}
+section li {display: flex; justify-content: flex-start;}
+section li i {padding-top: 20px;}
+ul .far {font-size: 15px;}
+ul .fas {font-size: 10px;}
+.titre {display: flex; align-items: baseline; padding:0 0 0 10px; margin:0 0 20px 0; height: 70px;}
+.titre h2 {color: black;}
+.titre i {margin-right: 30px;}
+.formation, .exp, .recom {margin-bottom: 30px;}
+.date {width: 30%; margin: 0 20px 0 0; font-weight: 900;}
+.poste {width: 100%;}
 
 /*___Footer___*/
 
-
 .recombloc{display: flex;}
-.recomlist{flex: 1}
+.recomlist{flex: 1;}
 
 
 /*____________________________Responsive Design______________________________*/
 
 
 @media all and (min-width:600px) and (max-width:1024px) {
-      aside {width: 75%; margin: auto}
+
 }
 
 @media all and (max-width:1024px) {
     .page {display: flex; flex-direction: column}
-    header {margin: auto;margin-bottom: 30px;}
-    aside {flex: }
+    header {margin: auto; margin-bottom: 30px;}
+    aside {width: 75%; margin: auto}
     .principal {margin: 10px}
     section li {flex-direction: column}
-    .recombloc {}
+    li p {margin-right: 30px}
+    .recombloc {margin-left: 20px}
 }
 
-@media all and (max-width:375px) {
-    header h1 {font-size: 45px;text-align: center}
+@media all and (max-width:414px) {
+    header h1 {font-size: 45px; text-align: center}
     header h3 {text-align: center}
+    aside {width: 100%}
     .date,.bio,.loisirs,.photo{display: none}
     .contact {margin-bottom: 30px}
-    .contact li{padding: 10x 0 10px 30px}
+    .contact li{padding: 10px 0 10px 30px}
     .exp .titre h2{font-size: 20px}
+    li p {margin-right: 10px}
     .recom p {font-size: 12px}
+    .recombloc {margin-left: 0px}
+    .hide {display: none}
 }
